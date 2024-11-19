@@ -1,5 +1,7 @@
+import 'package:ecommerce/utils/themes/themes.dart';
+import 'package:ecommerce/views/onboard/splash.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/route_manager.dart';
 
 void main() async {
   runApp(
@@ -12,16 +14,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'My Flutter App',
       themeMode: ThemeMode.system,
-      //theme: myAppTheme.myThemes,
-      initialRoute: '/intro',
-      // routes: {
-      //   '/intro': (context) => const IntroScreen(),
-      //   '/onboarding': (context) => const OnboardingScreen(),
-      //   '/BottomNavBar': (context) => BottomNavBar()
-      // },
+      theme: myAppTheme.myThemes,
+      home: const SplashScreen(),
     );
   }
 }

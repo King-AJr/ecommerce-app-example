@@ -23,3 +23,15 @@ TextStyle appBarText = GoogleFonts.poppins(
   fontWeight: FontWeight.w700,
   color: appBarTextColor,
 );
+
+TextStyle onboardingText = GoogleFonts.poppins(
+  fontSize: 12,
+  fontWeight: FontWeight.w400,
+  color: textColor,
+);
+
+TextStyle onboardingButtonText = GoogleFonts.montserrat(
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+  color: primaryColor,
+);

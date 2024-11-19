@@ -1,4 +1,5 @@
 import 'package:ecommerce/utils/colors.dart';
+import 'package:ecommerce/utils/material_color.dart';
 import 'package:ecommerce/utils/themes/buttonThemes.dart';
 import 'package:ecommerce/utils/themes/inputfield_theme.dart';
 import 'package:ecommerce/utils/themes/otherStyles.dart';
@@ -11,6 +12,7 @@ class myAppTheme {
     useMaterial3: false,
     brightness: Brightness.dark,
     primaryColor: primaryColor,
+    primarySwatch: generateMaterialColor(primaryColor),
     elevatedButtonTheme: elevatedButtonStyle,
     inputDecorationTheme: MyInputFieldTheme.InputFieldTheme,
     appBarTheme: appBarStyle,
