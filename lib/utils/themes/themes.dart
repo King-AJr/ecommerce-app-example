@@ -14,6 +14,7 @@ class myAppTheme {
     primaryColor: primaryColor,
     primarySwatch: generateMaterialColor(primaryColor),
     elevatedButtonTheme: elevatedButtonStyle,
+    outlinedButtonTheme: outlineButtonStyle,
     inputDecorationTheme: MyInputFieldTheme.InputFieldTheme,
     appBarTheme: appBarStyle,
     iconTheme: iconStyle,

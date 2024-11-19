@@ -16,9 +16,9 @@ final elevatedButtonStyle = ElevatedButtonThemeData(
 final outlineButtonStyle = OutlinedButtonThemeData(
   style: OutlinedButton.styleFrom(
     side: const BorderSide(
-        width: 1,
-        color: borderColor,
-      ),
-    textStyle: elevatedButtonText.copyWith(color: textColor)
-  )
+      width: 1,
+      color: borderColor,
+    ),
+    textStyle: elevatedButtonText.copyWith(color: textColor),
+  ),
 );

@@ -48,13 +48,86 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       children: [
                         Image(
                           image: AssetImage('assets/images/onboarding_one.png'),
-                          width: 213,
-                          height: 277.28,
+                          width: 240,
+                          height: 300,
                         ),
                       ],
                     ),
                     Text(
                       'Choose Product',
+                      style: onboardingButtonText,
+                    ),
+                    const SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+                        style: onboardingText,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            PageViewModel(
+              title: '',
+              bodyWidget: Container(
+                width: double.infinity,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/onboarding_two.png'),
+                          width: 240,
+                          height: 300,
+                        ),
+                      ],
+                    ),
+                    Text(
+                      'Make Payment',
+                      style: onboardingButtonText,
+                    ),
+                    const SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 50),
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+                        style: onboardingText,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            PageViewModel(
+              title: '',
+              bodyWidget: Container(
+                width: double.infinity,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image(
+                          image:
+                              AssetImage('assets/images/onboarding_three.png'),
+                          width: 240,
+                          height: 300,
+                        ),
+                      ],
+                    ),
+                    Text(
+                      'Get Your Order',
                       style: onboardingButtonText,
                     ),
                     const SizedBox(height: 10),
@@ -82,12 +155,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             activeSize: const Size(22, 10),
             activeShape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(24),
+              
             ),
           ),
           showNextButton: true,
           showBackButton: true,
           onDone: () {
-            Get.to(() => const LoginScreen());
+            Get.offAll(() => const LoginScreen());
           },
         ),
       ),

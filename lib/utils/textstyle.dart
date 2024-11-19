@@ -35,3 +35,15 @@ TextStyle onboardingButtonText = GoogleFonts.montserrat(
   fontWeight: FontWeight.w600,
   color: primaryColor,
 );
+
+TextStyle bodyHeading16 = GoogleFonts.poppins(
+  fontSize: 16,
+  fontWeight: FontWeight.w700,
+  color: Colors.black,
+);
+
+TextStyle bodyTextSmall = GoogleFonts.poppins(
+  fontSize: 12,
+  fontWeight: FontWeight.w400,
+  color: textColor,
+);
