@@ -18,7 +18,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: bgColor,
       body: SafeArea(
         child: IntroductionScreen(
           globalHeader: Row(
@@ -76,7 +76,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 width: double.infinity,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
-                color: Colors.white,
+                color: bgColor,
                 child: Column(
                   children: [
                     const Row(
@@ -155,7 +155,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             activeSize: const Size(22, 10),
             activeShape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(24),
-              
             ),
           ),
           showNextButton: true,

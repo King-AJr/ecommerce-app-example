@@ -8,8 +8,10 @@ const Color textColor = Color(0xff9098B1);
 
 const Color errorColor = Color(0xffFB7181);
 
-const Color borderColor = Color(0xff9098B1);
+const Color borderColor = Color(0xffEBF0FF);
 
 const Color appBarTextColor = Color(0xff223263);
 
 const Color IconColor = Color(0xff9098B1);
+
+const Color bgColor = Colors.white;
