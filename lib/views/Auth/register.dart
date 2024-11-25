@@ -1,6 +1,7 @@
 import 'package:ecommerce/utils/colors.dart';
 import 'package:ecommerce/utils/textstyle.dart';
 import 'package:ecommerce/views/Auth/login.dart';
+import 'package:ecommerce/views/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -82,7 +83,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(() => const HomeScreen());
+                          },
                           child: Text(
                             'Sign Up',
                             style: elevatedButtonText,

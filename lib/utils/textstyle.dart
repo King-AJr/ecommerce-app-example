@@ -47,3 +47,9 @@ TextStyle bodyTextSmall = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   color: textColor,
 );
+
+TextStyle headerBold24 = GoogleFonts.poppins(
+  fontSize: 24,
+  fontWeight: FontWeight.w700,
+  color: Colors.white,
+);
